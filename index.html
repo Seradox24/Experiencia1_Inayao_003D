@@ -1,92 +1,263 @@
-<!DOCTYPE html> <!--define que el documento es html5!-->
-<html lang="es"> <!--es el elemento raiz de la pagina y el idioma del sitio!-->
-<!--comentario -->
-<head> <!--contiene informacion sobre el documento (no se ve)-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo Yalane</title> <!--titulo del doc es el que se ve en la barra del nav-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head><!--------------------------------------------------------------------------------->
-<body><!--contiene los elementos visibles-->
-<!-- ---------------------------- navbar -------------------------------------- -->
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <!--▲color de fondo de nav-->
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-1 " href="index.html">
-            <img src="img/logo.png" alt="" width="200" height="140" class="d-inline-block align-text-center">
-            Incursio Travel
-          </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <!--▲ posicion del menu-->
-          <li class="nav-item d-flex">
-            <a class="nav-link aling align-self-center text-dark fw-bolder " aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link aling align-self-center text-dark fw-bolder " href="#">Quienes somos</a>
-          </li>          
-          <li class="nav-item d-flex">
-            <a class="nav-link aling align-self-center text-dark fw-bolder " href="#" >Galeria</a>
-          </li>
-          <li class="nav-item d-flex me-2">
-            <a class="btn btn-primary fw-bolder " href="#" >Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-<!----------------------------------------center-------------------------------------->
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Incursio Travel!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-------------------------------------Navbar----------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                
+                <i class="bi bi-signpost-split h3 text-warning"></i>
+                <span class="align-middle fw-bold h3">Incursio Travel</span>
+                <i class="bi bi-geo-alt-fill h3 text-danger"></i>
+            </a>
+            <!-- Boton para que sea responsive-->
+            <button
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end Boton para que sea responsive-->
+            <!-- Menu que se colapsa-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold h5">
+                        <li class="nav-item ">
+                            <a
+                                href="#inicio"
+                                class="nav-link active"
+                                aria-current="page"
+                            >
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#nosotros"
+                                class="nav-link active"                    
+                            >
+                                Quienes somos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#galeria"
+                                class="nav-link active"                    
+                            >
+                                Galeria
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!-- end Menu que se colapsa-->    
+        </div>
+    </nav>
+
+    <!-----------------------------------end Navbar--------------------------------------->
+    <!------------------------------------carousel---------------------------------------->
+    <section>
+        <div
+        id="carouselExampleIndicators" 
+        class="carousel slide carousel-fade mt-5" 
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicatorss" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide 1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>OFICINA SALITRERA HUMBERSTONE</h5>
+                        <p>50 km al este de Iquique, Tarapacá, Tamarugal, Pozo Almonte.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide 2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Turismo agrícola y aventura Yalane</h5>
+                        <p>Miñi Miñe se ubica en el límite Norte la Comuna de Huara, Provincia del Tamarugal, Región de Tarapacá.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide 3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>TOUR OASIS DE PICA</h5>
+                        <p>Oasis de Pica y Matilla – Pueblo de La Tirana.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide 4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Museo Corbeta Esmeralda</h5>
+                        <p>El Museo Corbeta Esmeralda es un museo chileno ubicado en la ciudad de Iquique.</p>
+                    </div>
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button"             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"   data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </section>
+    <!----------------------------------end carousel-------------------------------------->
+    <!--------------------------------------Main------------------------------------------>
+    <main class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center display-4 mb-5">
+                <span>
+                    DESCUBRE LOS ATRACTIVOS DE NORTE  
+                </span>
+                <i class="bi bi-geo-alt-fill text-white"></i>
+            </h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    <h5>Zona norte - Iquique.</h5>
+                    <hr>
+                    <p>Iquique es conocida como la “Tierra de campeones” y si visitas el norte chileno, no puedes dejar de visitar la capital de la Región de Tarapacá. Gracias a los vientos que predominan en este sector, se puede practicar parapente los 365 días del año y disfrutar las vistas de Iquique desde las alturas. Si prefieres los deportes náuticos, puedes practicar surf en la playa Cavancha y si te gusta la aventura en tierra, hacer sandboard en las dunas del cerro Dragón también se han vuelto uno de los imperdibles si estás en la ciudad.</p>
+                    <button
+                        class="btn btn-outline-light mb-5 mb-lg-0">
+                        Conocer Mas...
+                    </button>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <img src="img/slide 6.jpg" alt="" width="800px" class="img-fluid rounded">
+                </div>
+            </div>
+            <h1 class="py-5 display-6">Playa y desierto son los atractivos turísticos principales que hacen de Iquique y de la Región de Tarapacá en un destino imperdible para visitar durante tus vacaciones. </h1>
+        </div> 
+    </main>
+    <!------------------------------------end Main---------------------------------------->
+    <!---------------------------------Es bonito Soñar------------------------------------>
+    <section class="bg-dark text-white py-5">
+        <div class="container ">
+            <h2 class="text-center display-4 mb-5">
+                <span>
+                    Incursio App ya esta disponible.  
+                </span>
+                <i class="bi bi-joystick text-danger"></i>
+            </h2>
+            <div class="row align-items-center mx-auto">
+                <div class="col-12 col-lg-4">
+                    <div >
+                        <h5 class="text-primary mb-3">
+                            <span class="badge bg-primary">
+                                nuevo
+                            </span>
+                            Prueba nuestra nueva app de turismo
+                        </h5>
+                        <h2 class="display-4 fw-bold">
+                            Todos los servicios de turismo en un solo lugar<span class="text-primary">.</span>
+                        </h2>
+                        <p class="lead mb-4">
+                            Dile adios a la guia tradicional y disfruta todos los beneficios de una guia 100% Digital
+                        </p>
+                        <a href="#" class="btn btn-primary">Descargala ya</a>
+                        <div class="d-flex my-3 text-dark  ">
+                            <div class="d-flex bg-white me-4  ">
+                                <img src="img/logo-playstore.svg" class="me-3"  alt="">
+                                <div>
+                                    <small>
+                                        Disponible en 
+                                    </small>
+                                    <p class="h5 fw-bold">
+                                        Play Store
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex bg-white ">
+                                <img src="img/logo-apple.svg" class="me-4" alt="">
+                                <div>
+                                    <small>
+                                        Consiguela en
+                                    </small>
+                                    <p class="h5 fw-bold">
+                                        App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="content">
+                        <img src="img/app1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------end Dream-------------------------------------->
+    <!---------------------------------------footer--------------------------------------->
+    <footer class=" container-fluid bg-dark py-5 text-center text-white ">
+        <div class="border-3 border border-warning py-5  ">
+            <a href="https://github.com/Seradox24"><i class="bi bi-github text-light h1 m-3"></i></a>
+            <a href="https://youtu.be/aaZq6SXXNt4"><i class="bi bi-facebook text-light h1 m-3"></i></a>
+            <a href="https://youtu.be/DUT5rEU6pqM"><i class="bi bi-youtube text-light h1 m-3"></i></a>
+            <a href="https://youtu.be/hHUbLv4ThOo"><i class="bi bi-instagram text-light h1 m-3"></i></a>
+            <a href="https://youtu.be/XMeQeIG_rQghttps://youtu.be/XMeQeIG_rQg"><i class="bi bi-twitch text-light h1 m-3"></i></a>
+            <a href="https://youtu.be/voxgN3Dhjuo"><i class="bi bi-twitter text-light h1 m-3"></i></a>
+            <p>
+            Matias Inayao Poveda, @Copyrigth Derechos reservados. <a href="https://youtu.be/C8FQ4wQXyaE">www.bronza-power.cl</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-------------------------------------end footer-------------------------------------->
+
+    
 
 
-<!----------------------------------------footer-------------------------------------->
-</footer>
-  <!-- Footer -->
 
-  <footer class="bg-light text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/">
-            <img src="./img/facebook.png" alt="link facebook"></a>
-  
-       
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/genshinimpact/">
-            <img src="./img/insta.png" alt="link instagram"></a>
-  
-        <!-- youtube -->
-        <a href="https://www.youtube.com/watch?v=g8dmQs2Fzns">
-            <img src="./img/youtube.png" alt="link youtube"></a>
 
-        <!-- Github -->
-        <a href="https://github.com/Seradox24">
-            <img src="./img/github.png" alt="link github" width="80px" ></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3 " style="background-color: #000;">
-      © 2021 Copyright:
-      <a class="text-w" href="https://www.youtube.com/watch?v=bU1-VzDbDbM">Bronza-power.cl</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
 
-<!-- ---------------------------------------------------------------------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body><!--------------------------------------------------------------------------------->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- ---------------Option 1: Bootstrap Bundle with Popper------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
 </html>
