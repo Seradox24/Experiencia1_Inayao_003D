@@ -98,4 +98,12 @@
     transition-delay:.2s;
     }
 
-    
+    .containerf { text-align: center; }
+
+/*
+ * Font-size is 5% of the viewport width.
+ * When the width of the viewport changes,
+ * so does the font-size.
+ */
+
+    .textf { font-size: 1vw; }

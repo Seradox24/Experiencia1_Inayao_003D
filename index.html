@@ -37,11 +37,11 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold h5">
                         <li class="nav-item ">
                             <a
-                                href="/Index.html"
+                                href="Index.html"
                                 class="nav-link active"
                                 aria-current="page"
                             >
-                                Inicio
+                            Inició
                             </a>
                         </li>
                         <li class="nav-item">
@@ -49,7 +49,7 @@
                                 href="./pages/quienes somos.html"
                                 class="nav-link active"                    
                             >
-                                Quienes somos
+                            Quiénes somos
                             </a>
                         </li>
                         <li class="nav-item">
@@ -57,7 +57,7 @@
                                 href="./pages/galeria.html"
                                 class="nav-link active"                    
                             >
-                                Galeria
+                            Galería 
                             </a>
                         </li>
                     </ul>
@@ -68,10 +68,10 @@
 
     <!-----------------------------------end Navbar--------------------------------------->
     <!------------------------------------carousel---------------------------------------->
-    <section>
+    <section class="mt-5 col-12">
         <div
         id="carouselExampleIndicators" 
-        class="carousel slide carousel-fade mt-5" 
+        class="carousel slide carousel-fade" 
         data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicatorss" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -81,7 +81,7 @@
         </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/slide 1.jpg" class="d-block w-100" alt="...">
+                    <img src="img/slide 1.jpg" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>OFICINA SALITRERA HUMBERSTONE</h5>
                         <p>50 km al este de Iquique, Tarapacá, Tamarugal, Pozo Almonte.</p>
@@ -123,34 +123,41 @@
     <!--------------------------------------Main------------------------------------------>
     <main class="bg-dark text-white py-5">
         <div class="container">
-            <h2 class="text-center display-4 mb-5">
+            <h2 class="text-center display-4 mb-5 fw-bold">
                 <span>
                     DESCUBRE LOS ATRACTIVOS DE NORTE  
                 </span>
-                <i class="bi bi-geo-alt-fill text-white"></i>
+                <i class="bi bi-geo-alt-fill text-danger"></i>
             </h2>
             <div class="row align-items-center">
-                <div class="col-12 col-lg-4">
-                    <h5>Zona norte - Iquique.</h5>
+                <div class="col-12 col-lg-5 ">
+                    <h3>Zona norte - Iquique.</h3>
                     <hr>
-                    <p>Iquique es conocida como la “Tierra de campeones” y si visitas el norte chileno, no puedes dejar de visitar la capital de la Región de Tarapacá. Gracias a los vientos que predominan en este sector, se puede practicar parapente los 365 días del año y disfrutar las vistas de Iquique desde las alturas. Si prefieres los deportes náuticos, puedes practicar surf en la playa Cavancha y si te gusta la aventura en tierra, hacer sandboard en las dunas del cerro Dragón también se han vuelto uno de los imperdibles si estás en la ciudad.</p>
-                    <button
-                        class="btn btn-outline-light mb-5 mb-lg-0">
-                        Conocer Mas...
-                    </button>
+                    <p class="h5 ">Iquique es conocida como la “Tierra de campeones” y si visitas el norte chileno, no puedes dejar de visitar la capital de la Región de Tarapacá. Gracias a los vientos que predominan en este sector, se puede practicar parapente los 365 días del año y disfrutar las vistas de Iquique desde las alturas. Si prefieres los deportes náuticos, puedes practicar surf en la playa Cavancha y si te gusta la aventura en tierra, hacer sandboard en las dunas del cerro Dragón también se han vuelto uno de los imperdibles si estás en la ciudad.</p>
+                    <a href="https://chile.travel/donde-ir/norte-desierto-atacama/iquique"><button
+                        class="btn btn-primary mb-5 mb-lg-0 dis">
+                        <p class="h6 fw-bold ">
+                            Ver más...
+                        </p>
+                    </button></a>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <img src="img/slide 6.jpg" alt="" width="800px" class="img-fluid rounded">
+                <div class="col-12 col-lg-7">
+                    <div class="hovereffect">
+                        <img src="img/slide 6.jpg" alt="" class="img-fluid rounded">
+                        <div class="overlay">
+                            <p class="py-5 m-2 ">Playa y desierto son los atractivos turísticos principales que hacen de Iquique y de la Región de Tarapacá en un destino imperdible para visitar durante tus vacaciones. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 class="py-5 display-6">Playa y desierto son los atractivos turísticos principales que hacen de Iquique y de la Región de Tarapacá en un destino imperdible para visitar durante tus vacaciones. </h1>
+            
         </div> 
     </main>
     <!------------------------------------end Main---------------------------------------->
     <!---------------------------------Es bonito Soñar------------------------------------>
     <section class="bg-dark text-white py-5">
-        <div class="container ">
-            <h2 class="text-center display-4 mb-5">
+        <div class="container  ">
+            <h2 class="text-center display-4 mb-5 fw-bold">
                 <span>
                     Incursio App ya esta disponible.  
                 </span>
@@ -159,43 +166,20 @@
             <div class="row align-items-center mx-auto">
                 <div class="col-12 col-lg-4">
                     <div >
-                        <h5 class="text-primary mb-3">
+                        <h5 class="text-white">
                             <span class="badge bg-primary">
                                 nuevo
                             </span>
                             Prueba nuestra nueva app de turismo
                         </h5>
-                        <h2 class="display-4 fw-bold">
+                        <h2 class="display-5 fw-bold my-5">
                             Todos los servicios de turismo en un solo lugar<span class="text-primary">.</span>
                         </h2>
-                        <p class="lead mb-4">
+                        <p class="mb-4">
                             Dile adios a la guia tradicional y disfruta todos los beneficios de una guia 100% Digital
                         </p>
-                        <a href="#" class="btn btn-primary">Descargala ya</a>
-                        <div class="d-flex my-3 text-dark  ">
-                            <div class="d-flex bg-white me-4  ">
-                                <img src="img/logo-playstore.svg" class="me-3"  alt="">
-                                <div>
-                                    <small>
-                                        Disponible en 
-                                    </small>
-                                    <p class="h5 fw-bold">
-                                        Play Store
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex bg-white ">
-                                <img src="img/logo-apple.svg" class="me-4" alt="">
-                                <div>
-                                    <small>
-                                        Consiguela en
-                                    </small>
-                                    <p class="h5 fw-bold">
-                                        App Store
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="https://play.google.com/store?hl=es&gl=US" class="btn btn-primary">Descargala ya</a>
+                        
                     </div>                   
                 </div>
                 <div class="col-12 col-lg-6">
@@ -211,11 +195,10 @@
     <footer class=" container-fluid bg-dark py-5 text-center text-white ">
         <div class="border-3 border border-warning py-5  ">
             <a href="https://github.com/Seradox24"><i class="bi bi-github text-light h1 m-3"></i></a>
-            <a href="https://youtu.be/aaZq6SXXNt4"><i class="bi bi-facebook text-light h1 m-3"></i></a>
-            <a href="https://youtu.be/DUT5rEU6pqM"><i class="bi bi-youtube text-light h1 m-3"></i></a>
-            <a href="https://youtu.be/hHUbLv4ThOo"><i class="bi bi-instagram text-light h1 m-3"></i></a>
-            <a href="https://youtu.be/XMeQeIG_rQghttps://youtu.be/XMeQeIG_rQg"><i class="bi bi-twitch text-light h1 m-3"></i></a>
-            <a href="https://youtu.be/voxgN3Dhjuo"><i class="bi bi-twitter text-light h1 m-3"></i></a>
+            <a href="https://www.facebook.com"><i class="bi bi-facebook text-primary h1 m-3"></i></a>
+            <a href="https://www.youtube.com"><i class="bi bi-youtube text-danger h1 m-3"></i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-instagram text-warning h1 m-3"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter text-primary h1 m-3"></i></a>
             <p>
             Matias Inayao Poveda, @Copyrigth Derechos reservados. <a href="https://youtu.be/C8FQ4wQXyaE">www.bronza-power.cl</a>
             </p>
